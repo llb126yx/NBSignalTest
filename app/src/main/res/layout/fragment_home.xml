@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="#24474D">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="测试信息(实时)"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TableLayout
+        android:id="@+id/tableLayout2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:paddingLeft="5dp"
+                android:src="@drawable/ind_48be32" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:padding="5dp"
+                android:text="运营商："
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/operator"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:padding="0dp"
+                android:text="------------"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ind_0618fc" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:padding="5dp"
+                android:text="RSRP(-140~-44):"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/rsrp"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:padding="0dp"
+                android:text="------------"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:paddingLeft="5dp"
+                android:src="@drawable/ind_fc06e9" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:padding="5dp"
+                android:text="基站ID："
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/pci"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:padding="0dp"
+                android:text="------------"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ind_19fa28" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:padding="5dp"
+                android:text="RSRQ(-19.5~-3):"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/rsrq"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:padding="0dp"
+                android:text="------------"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:paddingLeft="5dp"
+                android:src="@drawable/ind_0bf4dd" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:padding="5dp"
+                android:text="小区ID："
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/cellID"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:padding="0dp"
+                android:text="------------"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ind_d81e06" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:padding="5dp"
+                android:text="RSSI(-140~-10):"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/rssi"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:padding="0dp"
+                android:text="------------"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:paddingLeft="5dp"
+                android:src="@drawable/ind_e0620d" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:padding="5dp"
+                android:text="中心频点："
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/earfcn"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:padding="0dp"
+                android:text="------------"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ind_b00bf4" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:padding="5dp"
+                android:text="SNR(-20~30):"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/snr"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:padding="0dp"
+                android:text="------------"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:layout_weight="0"
+                android:paddingLeft="5dp"
+                android:src="@drawable/ind_f42254" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:padding="5dp"
+                android:text="IP地址："
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/ipaddr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="0dp"
+                android:text="0.0.0.0"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ind_f4ea29" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:padding="5dp"
+                android:text="CSQ(0~31):"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/csq"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:padding="0dp"
+                android:text="------------"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+        </TableRow>
+    </TableLayout>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="20dp"
+        android:background="#FFFFFF"
+        android:padding="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout2"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <ImageButton
+        android:id="@+id/btnTest"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="#00FFFFFF"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/btnReboot"
+        app:layout_constraintEnd_toStartOf="@+id/btnManul"
+        app:layout_constraintHorizontal_bias="0.53"
+        app:layout_constraintStart_toEndOf="@+id/btnReboot"
+        app:srcCompat="@drawable/start" />
+
+    <ImageButton
+        android:id="@+id/btnReboot"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="30dp"
+        android:background="#00FFFFFF"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/reboot" />
+
+    <ImageButton
+        android:id="@+id/btnManul"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="40dp"
+        android:background="#00FFFFFF"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/btnTest"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/manul" />
+
+    <TextView
+        android:id="@+id/textLog"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="18sp"
+        android:textColor="#ffffff"
+        app:layout_constraintBottom_toTopOf="@+id/btnReboot"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view"
+        app:layout_constraintVertical_bias="0.504" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="评估结果"
+        android:textSize="20sp"
+        android:textColor="#ffffff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
+
+    <TextView
+        android:id="@+id/textRes"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="18sp"
+        android:textColor="#ffffff"
+        app:layout_constraintBottom_toTopOf="@+id/btnManul"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
